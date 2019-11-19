@@ -1,4 +1,4 @@
-# UpdateString function building
+# FindWordCount function building
 # Mitchell Long
 # CSCI 102 -- Section B
 # Week 12 - Part A
@@ -17,3 +17,6 @@ def UpdateString(string, letter, index):
     print("OUTPUT", newString)
 
 
+def FindWordCount(a, string):
+    word_count = a.count(string)
+    return word_count
