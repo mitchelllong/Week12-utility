@@ -1,2 +1,4 @@
-# Week12-utility
-CSCI 102 Week 12 Lab
+# Incremental Build Model
+# Mitchell Long
+# CSCI 102 -- Section B
+# Week 12 - Part A
