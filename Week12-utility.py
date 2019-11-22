@@ -20,3 +20,12 @@ def UpdateString(string, letter, index):
 def FindWordCount(a, string):
     word_count = a.count(string)
     return word_count
+
+def ScoreFinder(players, scores, player):
+    player = player.lower()
+    first_letter = player[0].upper()
+    player = player.replace(player[0], first_letter)
+    index = players.find(player)
+    score = scores[index]
+    print("OUTPUT", player, "got a score of", score)
+    
