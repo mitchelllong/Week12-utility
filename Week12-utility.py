@@ -33,3 +33,11 @@ def ScoreFinder(players, scores, player):
     
 def Union(scores, players2):
     return (scores + ' ' + players2)
+
+def Intersection(players, players2):
+    matched_players = []
+    for player in range(0, len(players)):
+        if players2.find(player) > 0:
+            matched_plauyers.append(player)
+    return matched_players
+
