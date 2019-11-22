@@ -1,4 +1,4 @@
-# FindWordCount function building
+# https://github.com/mitchelllong/Week12-utility
 # Mitchell Long
 # CSCI 102 -- Section B
 # Week 12 - Part A
@@ -25,7 +25,7 @@ def ScoreFinder(players, scores, player):
     player = player.lower()
     first_letter = player[0].upper()
     player = player.replace(player[0], first_letter)
-    if players.find(player) > 0:
+    if players.find(player) >= 0:
         score = scores[index]
         print("OUTPUT", player, "got a score of", score)
     else:
@@ -37,7 +37,13 @@ def Union(scores, players2):
 def Intersection(players, players2):
     matched_players = []
     for player in range(0, len(players)):
-        if players2.find(player) > 0:
+        if players2.find(player) >= 0:
             matched_plauyers.append(player)
     return matched_players
 
+def NotIn(players2, players):
+    not_in_players = []
+    for player in range(0, len(players2)):
+        if players.find(player) < 0:
+            not_in_players.append(player)
+    return not_in_players
