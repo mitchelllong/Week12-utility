@@ -25,7 +25,11 @@ def ScoreFinder(players, scores, player):
     player = player.lower()
     first_letter = player[0].upper()
     player = player.replace(player[0], first_letter)
-    index = players.find(player)
-    score = scores[index]
-    print("OUTPUT", player, "got a score of", score)
+    if players.find(player) > 0:
+        score = scores[index]
+        print("OUTPUT", player, "got a score of", score)
+    else:
+        print("OUTPUT player not found")
+    
+#def Union(scores, players2):
     
